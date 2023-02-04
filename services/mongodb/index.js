@@ -1,6 +1,6 @@
 import ToDo from "@/services/mongodb/models/ToDo";
 
-import dbConnect from "../dbConnect";
+import dbConnect from "./dbConnect";
 
 export async function getToDos() {
   await dbConnect();
