@@ -1,4 +1,4 @@
-import ToDo from "@/services/mongo-db/models/ToDo";
+import ToDo from "@/services/mongodb/models/ToDo";
 
 import dbConnect from "../dbConnect";
 

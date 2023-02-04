@@ -1,4 +1,4 @@
-import { getToDos, addToDo, deleteToDo } from "@/services/mongo-db";
+import { getToDos, addToDo, deleteToDo } from "@/services/mongodb";
 
 export default async function handler(request, response) {
   const { method, body } = request;
