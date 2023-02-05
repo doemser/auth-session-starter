@@ -11,6 +11,8 @@ export async function fetchToDo(method, url, body) {
     });
     if (response.ok) {
       mutate(url);
+    } else {
+      console.error("Bad Response.");
     }
   } catch (error) {
     console.error(error);
