@@ -1,4 +1,4 @@
-import useSWR, { mutate } from "swr";
+import useSWR from "swr";
 import { fetchToDo } from "@/services/fetch";
 
 export default function Home() {
