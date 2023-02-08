@@ -1,8 +1,6 @@
-import { mutate } from "swr";
-
-export async function fetchToDo(method, url, body) {
+export async function fetchToDo(method, successCallback, body) {
   try {
-    const response = await fetch(url, {
+    const response = await fetch("/api/to-dos", {
       method,
       body: JSON.stringify(body),
       headers: {
@@ -10,7 +8,7 @@ export async function fetchToDo(method, url, body) {
       },
     });
     if (response.ok) {
-      mutate(url);
+      successCallback();
     } else {
       console.error("Bad Response.");
     }
